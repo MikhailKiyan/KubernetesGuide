@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: kubernetes-guide-service
+spec:
+  selector:
+    app: kubernetes-guide-pod
+  ports:
+  - port: 8080
+    targetPort: 80
+  type: LoadBalancer

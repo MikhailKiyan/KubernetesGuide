@@ -17,3 +17,12 @@ Run command `docker pull '066851930357/kubernetes-guide:1.0.0'`
 
 ## pull and run (without enter into the container)
 Run command `docker run '066851930357/kubernetes-guide:1.0.0'`
+
+### Apply yml-files for the Local Kubernetes
+Run commands `kubectl apply -f ./deployment.yml`, `kubectl apply -f .\service.yml`
+
+### Ret current deploys, services and pods
+Run commands `kubectl get deployments`, `kubectl get services`, `kubectl get pods`
+
+### Get logs from a POD
+Run command `kubectl logs kubernetes-guide-deployment-54b866c4bd-8nbzd` 
